@@ -1,0 +1,62 @@
+.call-container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dbdada;
+    padding: 12px;
+    border-radius: 15px;
+    padding: 12px 0 12px 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.call-container .caller-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.call-container .caller-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.call-container .caller-info p{
+
+    margin: 0;
+}
+
+.time-container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.time-container-period{
+    padding: 7px 10px;
+    border: 1px solid #dbdada;
+    border-radius: 10px 0px 0 10px;
+    color: #7b7777;
+    font-weight: 500;
+}
+
+.call-type-icon{
+    width: 30px;
+}
+
+.caller-info .caller-number{
+    font-size: 18px;
+    color: #434141;
+    font-weight: 500;
+}
+
+.caller-info .caller-name{
+    color: #7b7777;
+    margin-left: 4px;
+}
+
+.time-container-hour{
+    color: #7b7777;
+    font-weight: 500;
+}

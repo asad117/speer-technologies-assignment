@@ -1,0 +1,130 @@
+.activity-main{
+    /* text-align: center; */
+}
+.nav-tabs{
+    border: none !important;
+    padding: 5px 90px;
+}
+
+.activity-main .tab-content{
+    padding: 15px;
+}
+
+.activity-main .nav-tabs>.nav-item>.nav-link.active {
+    background-color: #444;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.activity-main .nav-tabs>.nav-item>.nav-link {
+    color: #444;
+
+}
+
+.action-container{
+    text-align: center;
+}
+.action-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.action-container img{
+    width: 20px;
+}
+.action-button{
+    background-color: #FFFFFF;
+    border: none;
+}
+.back-button{
+    width: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+/* ------------details page--------------------- */
+
+.caller-avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.caller-avatar img{
+    width: 150px;
+}
+
+.call-detail-container{
+    background-color: #f7f7f7;
+    padding: 12px;
+}
+
+
+.caller-avatar .caller-title{
+    font-size: 22px;
+    font-weight: 500;
+    color:#434141
+}
+
+.call-time-box{
+    margin: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    padding: 1rem;
+    /* gap: 10px; */
+    box-shadow: 2px -2px 14px 0px rgba(0, 0, 0, 0.3);
+}
+
+.call-status {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.date-title{
+    color: #7b7777;
+    font-size: 1.1rem;
+
+}
+
+.call-title{
+    color: #7b7777;
+    font-size: 14px
+}
+.missed{
+    color:red;
+}
+
+.call-status-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 25px !important;
+}
+
+.call-duration{
+    color: #7b7777;
+    font-size: 14px;
+}
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.is-archived{
+    text-align: right;
+    font-size: 10px;
+    color: red;
+    color: #7b7777;
+}
+/* 
+.color-grey{
+    color: #7b7777 !important;
+} */
