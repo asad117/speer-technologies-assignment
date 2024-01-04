@@ -18,7 +18,6 @@ function* fetchCallsSaga(payload) {
     const data = yield call(fetchCalls);
     yield put(fetchDataSuccess(data));
   } catch (error) {
-    console.log("error.message", error.message);
     yield put(fetchDataFailure(error.message));
   }
 }
@@ -42,7 +41,6 @@ function* fetchCallDetailSaga(payload) {
     const data = yield call(getCallDetail, { id: payload.data });
     yield put(fetchDetailSuceess(data));
   } catch (error) {
-    console.log("error.message", error.message);
     yield put(fetchDetailFailure(error.message));
   }
 }

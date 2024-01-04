@@ -30,8 +30,6 @@ function CallActivity({
 
 
   const detailClickHandler = (id) => {
-    console.log("dataffhjahdfkhfah", id);
-
     setCurrentCallId(id);
     setCurrentCall(true);
   };

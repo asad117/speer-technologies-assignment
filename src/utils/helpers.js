@@ -11,7 +11,6 @@ function formatDateAndTime(dateTimeString) {
     const formattedDate = dateObject.toLocaleDateString(undefined, options);
     let date =(formattedDate.split(' at '))[0]
     let time = (formattedDate.split(' at '))[1]
-    console.log(date)
     return  {date,time} ;
   }
 

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import defaultAvatar from "../../assets/images/Blank-Avatar.png";
 import backIcon from "../../assets/images/back.png";
 import archivedIcon from "../../assets/images/archive.png";
+import { formatDateAndTime } from "../../utils/helpers";
 
 
 function ActivityDetail(props) {
@@ -11,26 +12,6 @@ function ActivityDetail(props) {
   useEffect(() => {
     fetchDetails(props.id);
   }, [id,fetchDetails]);
-
-  console.log("fetchDetails",callActivityDetail)
-
-
-  function formatDateAndTime(dateTimeString) {
-    const options = {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric',
-      hour12: true,
-    };
-    const dateObject = new Date(dateTimeString);
-    const formattedDate = dateObject.toLocaleDateString(undefined, options);
-    let date =(formattedDate.split(' at '))[0]
-    let time = (formattedDate.split(' at '))[1]
-    console.log(date)
-    return  {date,time} ;
-  }
 
     const formatCallDuration=(duration)=>{
        let callDuration = Math.floor(duration/60)
